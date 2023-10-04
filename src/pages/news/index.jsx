@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import Navigation from '../../components/Navigation'
 // import CardNews from '../../components/CardNews'
 import { Card, Button, Row, Col } from 'react-bootstrap'
-import Login from '../login'
 import axios from 'axios';
 
 
