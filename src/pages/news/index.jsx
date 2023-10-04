@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import Navigation from '../../components/Navigation'
-import CardNews from '../../components/CardNews'
+// import CardNews from '../../components/CardNews'
 import { Card, Button, Row, Col } from 'react-bootstrap'
+import Login from '../login'
 import axios from 'axios';
 
 
@@ -9,7 +10,7 @@ const News = () => {
     const [articles, setArticles] = useState([]);
 
     useEffect(() => {
-        const apiUrl = 'https://newsapi.org/v2/everything?q=tesla&from=2023-09-02&sortBy=publishedAt&apiKey=9ab918eefc984f018995d2bc064f0895';
+        const apiUrl = 'https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=9ab918eefc984f018995d2bc064f0895';
     
         axios
           .get(apiUrl)
